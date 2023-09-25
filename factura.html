@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lovers Cats - Factura</title>
+    <style>
+        table, th, td {
+                        border: 1px solid rgb(47, 62, 94);
+                        border-radius: 5px;
+                        
+         }
+        th, td {
+                        background-color: #b4f0ea;
+        }
+
+        .colorfondo {
+            background-color: rgb(102, 93, 230);
+            font-weight: 800;
+        }
+
+        .colorencabezado {
+            background-color: rgb(77, 75, 100);
+            font-weight: 800;
+            color: white;
+        }
+        
+        nav {
+            background-color: rgb(47, 62, 94);
+            color: #fff;
+            border-radius: 5px;
+        }
+
+        nav table {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav table td {
+            display: inline;
+            margin-right: 35px;
+        }
+
+        nav table td a {
+            text-decoration: none;
+            font-weight: 800;
+            color: #09519d;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            
+        }
+         
+    </style>
+</head>
+<body>
+
+    <section>
+        <img src="https://dpilaser.com/wp-content/uploads/2017/01/Bienvenido.png" alt="logotipo los gatos" title="logotipo los gatos" style="max-width: 35%; display: block; margin: 0 auto;">
+    </section>
+    
+    <nav>
+        <table>
+            <td colspan="5" rowspan="3"><a href="index.html">Inicio</a></td>              
+            <td colspan="5" rowspan="3"><a href="gatitos.html">Gatitos</a></td>
+            <td colspan="5" rowspan="3"><a href="conocenos.html">Conocenos</a></td>
+        </table>
+       
+    </nav>
+
+    <table>
+        <tr>
+            <td class="colorencabezado" colspan="3"><strong>Invoice#123456789</strong></td>
+            <td class="colorencabezado"><strong>14 January 2025</strong></td>
+        </tr>
+            
+        <tr></tr>
+
+        <!-- Aquí le añado un "colspan y rowspan" con los que indico cuantas columnas y celdas me debe ocupar -->
+        <!-- Además de añadirle un "width" quien le especificara la longitud de la celda, con el <strong> para resaltar su importancia y un <br/> con el que creare un salto de línea -->
+        <tr>
+            <td colspan="2" rowspan="4" style="width: 900px;"><strong>Pay to:</strong> <br>Acme Billing Co.<br/> 123 Main St. Cityville,<br/>  NA 12345<br/> </td>              
+            <td colspan="2" rowspan="4" style="width: 900px;"><strong>Pay to:</strong> <br>John Smith<br/>  321 Willow Way<br/>  Southeast Northwestershire,<br/>  MA 54321<br/> </td>
+                
+        </tr>
+
+        <!-- Aquí dejo estos "tr" en blanco, para que se me adapte el formato deseado de la tabla -->
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+
+        <tr></tr>
+
+        <tr><!-- Aquí le doy el tamaño de las celdas de uno de los encabezados de la tabla -->
+            <td class="colorencabezado" style="width: 500px;"><strong>Name / Description</strong></td>
+            <td class="colorencabezado" style="width: 500px;"><strong>Qty.</strong></td>
+            <td class="colorencabezado" style="width: 500px;"><strong>@</strong></td>
+            <td class="colorencabezado" style="width: 500px;"><strong>Cost</strong></td>
+        </tr>
+
+        <tr>
+            <td>Paperclips</td>
+            <td>1000</td>
+            <td>0.01</td>
+            <td>10.00</td>
+        </tr>
+
+        <tr>
+            <td>Staples (box)</td>
+            <td>100</td>
+            <td>1.00</td>
+            <td>100.00</td>
+        </tr>
+
+        <tr>
+            <tr><!-- Les asigno la clase "colorfondo" con la que le doy color a su background -->
+            <td colspan="3" class="colorfondo">Subtotal</td>
+            <td>110.00</td>
+        </tr>
+
+        <tr><!-- Les asigno la clase "colorfondo" con la que le doy color a su background -->
+            <td colspan="2" class="colorfondo">Tax</td>
+            <td>8%</td>
+            <td>8.80</td>
+        </tr>
+
+        <tr><!-- Les asigno la clase "colorfondo" con la que le doy color a su background -->
+            <td colspan="3" class="colorfondo">Grand Total</td>
+            <td>$118.80</td>
+        </tr>
+    </table>
+
+    <hr>
+    
+    <footer style="text-align: center;">
+        <p> Agradecimiento a EDEM y The Bridge por su apoyo y colaboración. </p>
+            <p> &copy; BootCamp 2023 MKGBS </p>
+    </footer>
+    
+</body>
+</html>
